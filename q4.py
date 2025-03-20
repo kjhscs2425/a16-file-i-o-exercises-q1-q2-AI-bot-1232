@@ -1,5 +1,6 @@
 import os
 import json
+import random 
 
 # Check if the file "data.json" exists.
 if os.path.isfile("data.json"):
@@ -21,4 +22,10 @@ data[name] = recommendation
 with open("data.json", "w") as file:
     json.dump(data, file, indent=4)
 
-print("Thanks for your recommendation!")
+
+
+random 
+[
+"i appreciate the reccomandatiom",
+"thanks for the recomandation",
+]
