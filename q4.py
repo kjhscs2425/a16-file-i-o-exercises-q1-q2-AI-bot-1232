@@ -1,14 +1,12 @@
 import os
 import json
+import random 
 
 # Check if the file "data.json" exists.
 if os.path.isfile("data.json"):
     # If it does, read "data.json" into the variable `data`
-
-    ####
-    #### YOUR CODE HERE 
-    ####
-
+    with open("data.json", "r") as file:
+        data = json.load(file)
 else:
     # If it doesn't, make an empty dictionary called data
     data = {}
@@ -21,8 +19,13 @@ recommendation = input("What book/movie/podcast/etc. would you recommend? ")
 data[name] = recommendation
 
 # Write the `data` variable to the file "data.json"
+with open("data.json", "w") as file:
+    json.dump(data, file, indent=4)
 
-####
-#### YOUR CODE HERE 
-####
 
+
+random 
+[
+"i appreciate the reccomandatiom",
+"thanks for the recomandation",
+]
